@@ -1,0 +1,45 @@
+@media all and (max-width: 412px){
+    .container{
+        width: 100%;
+        margin-left: -30px;
+    }
+    .page_one {
+        display: flex;
+        gap: 60px;
+    }
+    .page_one .left p{
+        font-size: 12px;
+    }
+    .page_one .left h2{
+        font-size: 18px;
+        margin-left: 22px;
+    }
+    .page_one .left .profile p {
+        font-size: 11px;
+    }
+    .animated-link{
+        font-size: 13px;
+        margin-left: 22px;
+    }
+    .page_one .left{
+        width: 50%;
+    }
+    .page_one .left img{
+        width: 89px;
+        margin-left: 18px;
+    }
+    .animated-coordinates{
+        font-size: 12px;
+    }
+    .animated-email{
+        margin-left: 2px;
+    font-size: 10px;
+    width: 123px;
+    }
+    .diff_h2{
+       margin-left: 9px !important;
+    }
+    .references p{
+        font-size: 1px;
+    }
+}
