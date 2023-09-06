@@ -1,0 +1,155 @@
+/* дефолтный вид ссылки */
+.animated-link {
+    margin-left: 20px;
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: padding 0.3s ease;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/* создание кнопки при наведенеии */
+.animated-link::before {
+content: "Звоните мне!";
+position: absolute;
+top: 0;
+left: 100%;
+width: 100%;
+height: 100%;
+background-color: blueviolet;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 0.3s ease, opacity 0.3s ease; 
+opacity: 0;
+}
+
+/* Стили для ссылки при наведении */
+.animated-link:hover {
+  padding-left: 60px; 
+}
+/* сдвиг влево и появление кнопки */
+.animated-link:hover::before {
+  left: 0;
+  opacity: 1; 
+}
+
+/* Стиль для ссылки при отведении */
+.animated-link:not(:hover) {
+  padding-left: 0; 
+}
+/* анимация при отведении курсора от кнопки */
+.animated-link:not(:hover)::before {
+  left: 100%; 
+  opacity: 0; 
+}
+/* _______________________________________________________________________ */
+
+
+/* дефолтный вид ссылки */
+.animated-coordinates {
+    margin-left: 20px;
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: padding 0.3s ease;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 0px;
+}
+
+/* создание кнопки при наведенеии */
+.animated-coordinates::before {
+content: "Мое местоположение!   ";
+position: absolute;
+top: 0;
+left: 100%;
+width: 100%;
+height: 100%;
+background-color: yellow;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+
+transition: left 0.3s ease, opacity 0.3s ease; 
+opacity: 0;
+}
+
+/* Стили для ссылки при наведении */
+.animated-coordinates:hover {
+  padding-left: 20px; 
+}
+/* сдвиг влево и появление кнопки */
+.animated-coordinates:hover::before {
+  left: 0;
+  opacity: 1; 
+}
+
+/* Стиль для ссылки при отведении */
+.animated-coordinates:not(:hover) {
+  padding-left: 0; 
+}
+/* анимация при отведении курсора от кнопки */
+.animated-coordinates:not(:hover)::before {
+  left: 100%; 
+  opacity: 0; 
+}
+
+/* ------------------------------------------------------- */
+/* дефолтный вид ссылки */
+.animated-email {
+    margin-left: 20px;
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: padding 0.3s ease;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 0px;
+}
+
+/* создание кнопки при наведенеии */
+.animated-email::before {
+content: "Мой email!";
+position: absolute;
+top: 0;
+left: 100%;
+width: 100%;
+height: 100%;
+background-color: #90EE90;
+color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 0.3s ease, opacity 0.3s ease; 
+opacity: 0;
+}
+
+/* Стили для ссылки при наведении */
+.animated-email:hover {
+  padding-left: 20px; 
+}
+/* сдвиг влево и появление кнопки */
+.animated-email:hover::before {
+  left: 0;
+  opacity: 1; 
+}
+
+/* Стиль для ссылки при отведении */
+.animated-email:not(:hover) {
+  padding-left: 0; 
+}
+/* анимация при отведении курсора от кнопки */
+.animated-email:not(:hover)::before {
+  left: 100%; 
+  opacity: 0; 
+}
